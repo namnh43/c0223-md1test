@@ -10,7 +10,7 @@ function findScoreMax(arr) {
     //sorting array
     for (let i = 0; i < uniqueArr.length; i++) {
         for (let j = i + 1; j < uniqueArr.length; j++) {
-            if (uniqueArr[i] > uniqueArr[j]) {
+            if (uniqueArr[i] < uniqueArr[j]) {
                 let temp = uniqueArr[i];
                 uniqueArr[i] = uniqueArr[j];
                 uniqueArr[j] = temp;
