@@ -47,11 +47,7 @@ class Rectangle {
     }
     render(canvas) {
         let ctx = canvas.getContext("2d");
-        console.log(ctx)
-        // ctx.fillStyle(this.color)
-        // ctx.fillRect(this.x,this.y,this.width,this.height)
-        ctx.beginPath();
-        ctx.rect(this.x,this.y,this.width,this.height);
-        ctx.stroke();
+        ctx.fillStyle = this.color
+        ctx.fillRect(this.x,this.y,this.width,this.height)
     }
 }
