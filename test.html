@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+
+    function checkString(str1, str2) {
+        if (str2.length < str1.length)
+            return false;
+        let str1Length = str1.length;
+        let str2Length = str2.length;
+        for (let index = 0; index <= str2Length - str1Length; index++) {
+            let subStr = str2.slice(index, index + str1Length);
+            console.log(index + "-" + subStr);
+            if (subStr == str1) {
+                return true;
+            }
+        }
+        return false;
+    }
+    console.log(checkString("5","12345"))
+</script>
 </html>
